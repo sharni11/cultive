@@ -6,6 +6,8 @@ var app= express();
 app.get('/',function(req,res){
           res.sendFile(__dirname+'/frontend/html/index.html');
 });
+//tell express where html,css,js files are
+app.use(express.static(__dirname+'/frontend'));
 var port=process.env.PORT ||3000;
  
 app.listen(port,function(){
