@@ -2,8 +2,9 @@
 var express=require('express');
 // create application 
 var app= express();
+// defining function that runs when someone access our site
 app.get('/',function(req,res){
-          res.send("Hello Welcome to Cultive");
+          res.sendFile(__dirname+'/frontend/html/index.html');
 });
 var port=process.env.PORT ||3000;
  
