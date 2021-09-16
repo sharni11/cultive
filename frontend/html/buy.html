@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>CultiveBuy </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/0aca7bd66a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>  
+    <link rel="stylesheet" href="/css/buy.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+ <div class="container-fluid">
+   <a class="navbar-brand" href="#">CULTIVE BUY</a>
+ </div>
+</nav>
+<div id="wrap">
+	<div id="columns" class="columns_4">
+  <figure>
+  <img src="/images/product1.jpeg">
+	<figcaption>Iron Gardening Tools</figcaption>
+    <span class="price">Price: Rs.1/-</span>
+    <a class="button" href="#" class="rzp-button1 onclick="buy(this)">Buy Now</a>
+	</figure>
+
+	<figure>
+	<img src="/images/product2.jpeg">
+	<figcaption>Cilantro Seeds 75 seeds</figcaption>
+    <span class="price">Price: Rs.1/-</span>
+    <a class="button" href="#"  onclick="buy(this)">Buy Now</a>
+	</figure>
+
+  <figure>
+	<img src="/images/product3.jpeg">
+	<figcaption>HDPE Grow Bags 09*09 inches</figcaption>
+    <span class="price">Price: Rs.1/-</span>
+    <a class="button" href="#" onclick="buy(this)">Buy Now</a>
+	</figure>
+
+	<figure>
+	<img src="/images/product4.jpeg">
+	<figcaption>Gaillardia Aristata Mixed (50 Seeds)</figcaption>
+    <span class="price">Price: Rs.1/-</span>
+    <a class="button" href="#" onclick="buy(this)">Buy Now</a>
+	</figure>
+
+   <figure>
+	 <img src="/images/product5.jpeg">
+	<figcaption>Marigold White African</figcaption>
+    <span class="price">Price: Rs.1/-</span>
+    <a class="button" href="#" onclick="buy(this)">Buy Now</a>
+	</figure>
+
+   <figure>
+	 <img src="/images/product6.jpeg">
+	<figcaption>Kochia Fire Bush (100 Seeds)</figcaption>
+     <span class="price">Price: Rs.1/-</span>
+     <a class="button" href="#"  onclick="buy(this)">Buy Now</a>
+	</figure>
+
+	<figure>
+	<img src="/images/product7.jpeg">
+	<figcaption>Curly Kale (400 Seeds)</figcaption>
+    <span class="price">Price: Rs.1/-</span>
+    <a class="button" href="#" onclick="buy(this)">Buy Now</a>
+	</figure>
+
+   <figure>
+	<img src="/images/product8.jpeg">
+	<figcaption>Microgreen Kale (1000 Seeds)</figcaption>
+     <span class="price">Price: Rs.1/-</span>
+     <a class="button" href="#" onclick="buy(this)">Buy Now</a>
+	</figure>
+
+    <figure>
+	<img src="/images/product9.jpeg">
+    <figcaption>Homemade Desi Cow Dung Cake(10 Pack)</figcaption>
+      <span class="price">Price: Rs.1/-</span>
+      <a class="button" href="#"  onclick="buy(this)">Buy Now</a>
+	</figure>
+  <figure>
+<img src="/images/product10.jpeg">
+  <figcaption>Trowel/ Spade/ Desi Khurpa (Gardening Tool)</figcaption>
+    <span class="price">Price: Rs.1/-</span>
+    <a class="button" href="#"  onclick="buy(this)">Buy Now</a>
+</figure>
+<figure>
+<img src="/images/product11.jpeg">
+<figcaption>HDPE Round Spinach Grow Bag - 18x6 Inches (1½x 1⁄2 Ft) - 220 GSM</figcaption>
+  <span class="price">Price: Rs.1/-</span>
+  <a class="button" href="#" "  onclick="buy(this)">Buy Now</a>
+</figure>
+<figure>
+<img src="/images/product12.jpeg">
+<figcaption>Germination Kit</figcaption>
+  <span class="price">Price: Rs.1/-</span>
+  <a class="button" href="#"   onclick="buy(this)">Buy Now</a>
+</figure>
+</div>
+</div>
+<footer id="footer">
+  <i class="fab fa-twitter social"></i>
+  <i class="fab fa-facebook-f social"></i>
+  <i class="fab fa-instagram social"></i>
+  <i class="fas fa-envelope social"></i>
+
+  <p>© Copyright 2021 Cultive</p>
+
+</footer>
+<script>
+  var rzp1;
+  axios.post("/order").then((info)=>
+  {
+      console.log(info);
+      var options = {
+  "key": "rzp_test_QJ6Y7G3p1zOqrc", // Enter the Key ID generated from the Dashboard
+  "name": "Purchase",
+  "description": "Test Transaction",
+  "image": "https://example.com/your_logo",
+  "order_id": info.data.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+  "callback_url": "/is-order-complete",
+  "theme": {
+      "color": "#3399cc"
+  }
+};
+
+rzp1 = new Razorpay(options);
+})
+ function buy(e){
+  rzp1.open();
+  e.preventDefault();
+}
+
+</script>
+  </body>
+</html>
